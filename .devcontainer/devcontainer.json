@@ -15,6 +15,7 @@
 				"GitHub.copilot-chat"
 			]
 		}
-	}
-	
+	},
+	"postCreateCommand": "dotnet restore ./Application/src/RazorPagesApp/RazorPagesTestSample/"
+		
 }
