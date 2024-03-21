@@ -2,6 +2,8 @@ name: Manual workflow
 
 on:
   workflow_dispatch:
+  issues:
+    types: [opened]
 
 jobs:
   job1:
@@ -22,4 +24,4 @@ jobs:
       uses: mscoutermarsh/cowsays-action@master
       with:
         text: 'Confundo!'
-        color: 'brown'
+        color: '#80350E'
