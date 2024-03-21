@@ -19,5 +19,5 @@ jobs:
     - name: Deploy Bicep template
       uses: azure/arm-deploy@v1
       with:
-        scope: /subscriptions/${{ fromJson(secrets.CONFUNDO).subscriptionId }}/resourceGroups/${{ vars.CONFUNDOVAR }} }}
+        scope: /subscription/${{ fromJson(secrets.CONFUNDO).subscriptionId }}/resourcegroup/${{ vars.CONFUNDOVAR }} }}
         template: ./InfrastructureAsCode/main.bicep
